@@ -2,6 +2,6 @@
 
 import com.example.Docker
 
-def call(String imageName) {
-    return new Docker(this).buildDockerImage(imageName)
+def call(String imageName, String contextDir = ".") {
+    return new Docker(this).buildDockerImage(imageName, contextDir)
 }
